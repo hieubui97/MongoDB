@@ -27,7 +27,7 @@
                         @Html.HiddenFor(model => model.Id)
                         <div class="form-group">
                             <label>Mã sinh viên</label>
-                            <input class="form-control form-control-sm" name="MaSV" value="@Model.MaSV"/>
+                            <input class="form-control form-control-sm" name="MaSV" value="@Model.MaSV" />
                             @Html.ValidationMessageFor(model => model.MaSV, "", new { @class = "text-danger" })
                         </div>
                         <div class="form-group">
@@ -40,20 +40,20 @@
                             <input class="form-control form-control-sm" name="DiemKy2" value="@Model.DiemKy2" />
                             @Html.ValidationMessageFor(model => model.DiemKy2, "", new { @class = "text-danger" })
                         </div>
-                        @*<div class="form-group ">
-            <label>Kết quả</label>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="KetQua" value="true" checked>Đỗ
-                </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="KetQua" value="false">Trượt
-                </label>
-            </div>
-            @Html.ValidationMessageFor(model => model.KetQua, "", new { @class = "text-danger" })
-        </div>*@
+                        <div class="form-group ">
+                            <label>Kết quả</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="KetQua" value="true" checked>Đỗ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="KetQua" value="false">Trượt
+                                </label>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.KetQua, "", new { @class = "text-danger" })
+                        </div>
                         <div class="form-group">
                             <button class="btn btn-sm btn-success" type="submit">Submit</button>
                             <button class="btn btn-sm btn-danger" type="reset">Clear</button>
